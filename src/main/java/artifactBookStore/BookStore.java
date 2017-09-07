@@ -24,4 +24,18 @@ public class BookStore {
 		array1.add(b3);
 	}
 
+	public int getGenreCount(String genre)
+	{
+		int count = 0;
+		String genreString;
+		for(int i=0; i<array1.size(); i++)
+		{
+			genreString = array1.get(i).getGenre();
+			if (genreString.equals(genre))
+			{
+				count++;
+			}
+		}
+		return count;
+	}
 }

@@ -13,7 +13,6 @@ public class Book {
 		this.genre = g1;
 		this.actualId = id;
 		id++;
-		
 	}
 	
 	public String getName()
